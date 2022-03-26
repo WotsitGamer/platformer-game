@@ -1,4 +1,4 @@
 # Cool Platformer Game
 ## Epic platformer game made with `pygame`
-```epic```
+```epic```  
 [documentation](https://wotsitgamer.github.io/platformer-game/)
