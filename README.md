@@ -1,2 +1,3 @@
-# platformer-game
-Epic platformer game made with pygame
+# Cool Platformer Game
+## Epic platformer game made with pygame
+```epic```
