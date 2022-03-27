@@ -9,6 +9,7 @@ bg = pygame.Surface((800, 400))
 ground = pygame.Surface((800, 200))
 font = pygame.font.Font('font/nova.ttf', 30)
 enemy = pygame.Surface((50, 50))
+player = pygame.Surface((50, 100))
 enemyOriginalX = 600
 enemyOriginalY = 250
 enemySpeed = 4
@@ -28,6 +29,7 @@ while True:
   screen.blit(ground, (0, 300))
   screen.blit(title, (275, 50))
   screen.blit(enemy,(enemyOriginalX, enemyOriginalY))
+  screen.blit(player, (20, 200))
   pygame.display.update()
   enemyOriginalX -= enemySpeed
   if enemyOriginalX < -100:
