@@ -1,3 +1,5 @@
+from multiprocessing.connection import wait
+from turtle import delay
 import pygame
 from sys import exit
 
@@ -33,7 +35,14 @@ while True:
   screen.blit(title, (275, 50))
   screen.blit(enemy, enemy_rect)
   screen.blit(player, player_rect)
-  pygame.display.update()
   enemy_rect.x -= enemySpeed
   if enemy_rect.right <= 0: enemy_rect.left = 800
+
+  #if player_rect.colliderect(enemy_rect):
+    #print('epic')
+  mouse_pos = pygame.mouse.get_pos()
+  if player_rect.collidepoint((mouse_pos)):
+    print(pygame.mouse.get_pressed())
+
+  pygame.display.update()
   clock.tick(60)
