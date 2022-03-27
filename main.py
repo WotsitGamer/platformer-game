@@ -1,5 +1,3 @@
-from multiprocessing.connection import wait
-from turtle import delay
 import pygame
 from sys import exit
 
